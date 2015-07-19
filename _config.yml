@@ -1,0 +1,45 @@
+# Site wide configuration
+
+title:            Quickinsights
+locale:           en_US
+url:              
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Mike Trienis
+  avatar: bio-photo-mike.png
+  bio: "All about data product and services that scale; from design to implementation"
+  email: mike.trienis@orcsol.com
+  twitter: trienism
+  google:
+    analytics: UA-65302768-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: trienism
+  stackoverflow: http://stackoverflow.com/users/3747110/trienism
+  linkedin: https://ca.linkedin.com/in/miketrienis
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
