@@ -16,6 +16,10 @@ sass:
 gems:
   - jekyll-sitemap
 
+mermaid:
+  src: '/js/mermaid.js'
+  src_config: '/js/mermaid_config.js'
+
 kramdown:
   auto_ids: true
   footnote_nr: 1
@@ -40,6 +44,7 @@ owner:
   github: trienism
   stackoverflow: http://stackoverflow.com/users/3747110/trienism
   linkedin: https://ca.linkedin.com/in/miketrienis
+
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

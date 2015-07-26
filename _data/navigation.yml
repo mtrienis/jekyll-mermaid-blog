@@ -6,6 +6,12 @@
 - title: Services
   url: /services/
 
-- title: Posts
-  url: /posts/
+- title: Apache Spark
+  url: /spark/
+
+- title: Continuous Delivery
+  url: /delivery/
+
+- title: Blog
+  url: /blog/
 

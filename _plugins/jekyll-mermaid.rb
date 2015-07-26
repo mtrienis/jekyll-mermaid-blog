@@ -7,9 +7,7 @@ module Jekyll
 
     def render(context)
       @config = context.registers[:site].config['mermaid']
-      "<script src=\"#{@config['src_config']}\"></script>" \
-      "<script src=\"#{@config['src']}\"></script>"\
-      "<div class=\"mermaid\">#{super}</div>"
+      "<div class=\"mermaid\" id=\"i141\">#{super}</div>"
     end
   end
 end
