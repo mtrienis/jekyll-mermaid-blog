@@ -3,14 +3,14 @@
 - title: About
   url: /about/
 
-- title: Services
+- title: Product Services
   url: /services/
 
-- title: Apache Spark
-  url: /spark/
+- title: Data Framework
+  url: /data/
 
-- title: Continuous Delivery
-  url: /delivery/
+#- title: Continuous Delivery
+#  url: /delivery/
 
 - title: Blog
   url: /blog/

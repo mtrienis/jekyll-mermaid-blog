@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spark Streaming and AWS Kinesis Pitfalls"
+title:  "Spark streaming and aws kinesis pitfalls"
 date:   2015-05-31 12:00:00
 categories: Apache Spark
 image:

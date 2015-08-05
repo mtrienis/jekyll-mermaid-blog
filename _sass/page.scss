@@ -8,7 +8,7 @@ body {
 	color: $text-color;
 }
 
-/* 
+/*
    Header
    ========================================================================== */
 
@@ -79,7 +79,7 @@ body {
 			white-space: nowrap;
 			border-bottom: 0 solid transparent;
 		}
-		a { 
+		a {
 			display: block;
 			padding: 10px 0;
 			decoration: none;
@@ -165,11 +165,11 @@ $button-size: 1.5rem;
 	}
 }
 // Style the toggle menu link and hide it
-.nav .navtoogle {	
+.nav .navtoogle {
 	@include font-rem(18);
 	font-weight: normal;
 	background-color: $black;
-	color: $white;	
+	color: $white;
 	border: none;
 	cursor: pointer;
 	@media #{$small} {
@@ -206,7 +206,7 @@ $button-size: 1.5rem;
 	}
 }
 // Displaying the menu when the user has clicked on the button
-.js .nav .active + ul {		
+.js .nav .active + ul {
 	max-height: 30em;
 	overflow: hidden;
 	-webkit-transition: max-height .4s;
@@ -548,7 +548,7 @@ $button-size: 1.5rem;
 	margin: 1em 0;
 	li {
 		display: inline;
-		a { 
+		a {
 			border-bottom: 0 solid transparent;
 			&:hover {
 				border-bottom: 0 solid transparent;
@@ -574,7 +574,7 @@ $button-size: 1.5rem;
   li {
   	display: inline-block;
   }
-  $social: 
+  $social:
   (facebook, $facebook-color),
   (flickr, $flickr-color),
   (foursquare, $foursquare-color),
@@ -590,7 +590,7 @@ $button-size: 1.5rem;
   @each $socialnetwork, $color in $social {
     .#{$socialnetwork} {
       background: $color;
-    }    
+    }
   }
   a {
 	  display: block;
@@ -634,7 +634,7 @@ $button-size: 1.5rem;
 	h4,
 	h5,
 	h6,
-	span { 
+	span {
 		@include font-rem(14);
 	}
 	footer {
@@ -679,7 +679,7 @@ $button-size: 1.5rem;
 	}
 }
 
-/* 
+/*
    Browser upgrade alert
    ========================================================================== */
 
@@ -699,7 +699,7 @@ $button-size: 1.5rem;
 		}
 	}
 }
-/* 
+/*
    Google search form
    ========================================================================== */
 
@@ -729,4 +729,41 @@ $button-size: 1.5rem;
 }
 #goog-wm-sb {
 	@extend .btn;
+}
+
+/** MT: Adding custom table styling code */
+
+.table {
+  border-collapse: collapse;
+  margin: ((0px + $doc-line-height) / 2) 0;
+  margin: ((0rem + ($doc-line-height / $doc-font-size)) / 2) 0;
+  width: 100%;
+  tbody {
+	tr:hover > td, tr:hover > th {
+	  background-color: $table-hover-color;
+	}
+  }
+  thead {
+	tr:first-child td {
+	  border-bottom: 2px solid $table-border-color;
+	}
+  }
+  th {
+	padding: (0px + $doc-line-height) / 2;
+	padding: (0rem + ($doc-line-height / $doc-font-size)) / 2;
+	font-family: $alt-font;
+	font-weight: bold;
+	text-align: left;
+	background-color: $table-header-color;
+	border-bottom: 1px solid darken($border-color, 15%);
+  }
+  td {
+	border-bottom: 1px solid $border-color;
+	padding: (0px + $doc-line-height) / 2;
+	padding: (0rem + ($doc-line-height / $doc-font-size)) / 2;
+	@include font-size(18);
+  }
+  tr, td, th {
+	vertical-align: middle;
+  }
 }

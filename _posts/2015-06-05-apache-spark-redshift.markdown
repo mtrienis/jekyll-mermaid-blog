@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Integrating Spark Streaming and AWS Redshift"
+title:  "Integrating spark streaming and aws redshift"
 date:   2015-05-31 12:00:00
 categories: Apache Spark
 image:

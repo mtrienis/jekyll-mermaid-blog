@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Launching Apache Spark using Supervisord"
+title:  "Launching apache spark using supervisord"
 date:   2015-06-05 12:00:00
 categories: Apache Spark
 image:
