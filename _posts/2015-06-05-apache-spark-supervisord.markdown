@@ -7,8 +7,6 @@ image:
   feature: sample-image-7.jpg
 ---
 
-# Launching master and worker(s) in standalone mode
-
 Apache Spark comes bundled with several [launch scripts](https://spark.apache.org/docs/latest/spark-standalone.html) to start the master and worker processes. We can launch a master and two workers processes by executing
 
 {% highlight bash %}

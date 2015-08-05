@@ -6,11 +6,7 @@ categories: Apache Spark
 image:
   feature: sample-image-7.jpg
 ---
-
-# Spark streaming ETL with AWS
-
 {% stylesheet mermaid %}
-
 The most efficient way to load data into AWS Redshift is first upload your data to S3 and then execute the copy command on Redshift. From the [documentation](http://docs.aws.amazon.com/redshift/latest/dg/t_Loading_data.html)
 
 >A COPY command is the most efficient way to load a table. When you load data from Amazon S3, the COPY command is able to read from multiple data files simultaneously. Whether you load from data files on Amazon S3 or from an Amazon DynamoDB table, Amazon Redshift distributes the workload to the cluster nodes and performs the load process in parallel.

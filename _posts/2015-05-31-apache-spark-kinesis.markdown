@@ -7,7 +7,7 @@ image:
   feature: sample-image-7.jpg
 ---
 
-## Common pitfalls
+The following are a list of common pitfalls when trying to integrate kinesis with spark streaming.
 
 ### Each receiver occupies an entire core
 
