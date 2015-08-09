@@ -32,22 +32,22 @@ h6 {
    Links
    ========================================================================== */
 
-a { 
+a {
 	text-decoration: none;
-	color: $link-color; 
-	&:visited { 
-		color: $linkcolorvisited; 
+	color: $link-color;
+	&:visited {
+		color: $linkcolorvisited;
 	}
-	&:hover { 
-		color: $linkcolorhover; 
+	&:hover {
+		color: $linkcolorhover;
 	}
-	&:focus { 
-		outline: thin dotted; 
+	&:focus {
+		outline: thin dotted;
 		color: $linkcolorfocus;
 	}
-	&:hover, 
-	&:active { 
-		outline: 0; 
+	&:hover,
+	&:active {
+		outline: 0;
 	}
 }
 

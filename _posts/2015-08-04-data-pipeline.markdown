@@ -6,12 +6,11 @@ categories: Apache Spark
 image:
   feature: sample-image-7.jpg
 ---
-
-{% stylesheet mermaid %}
-
 A data pipeline is method for shipping data efficiently to various services throughout your organization. 
 
 On one hand you will have your set of producers that will generate the data for your pipeline. They are essentially your sources of data. 
+
+{% stylesheet mermaid %}
 
 {% mermaid %}
         graph LR

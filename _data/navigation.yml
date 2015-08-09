@@ -3,11 +3,11 @@
 - title: About
   url: /about/
 
-- title: Product Services
+- title: Services
   url: /services/
 
-- title: Data Framework
-  url: /data/
+- title: Spark
+  url: /spark/
 
 - title: Blog
   url: /blog/
