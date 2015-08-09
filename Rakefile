@@ -4,8 +4,9 @@ require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 
+
 # Change your GitHub reponame
-GITHUB_REPONAME = "trienism/quickinsights.github.io"
+GITHUB_REPONAME = "trienism/trienism.github.io"
 
 
 desc "Generate blog files"
