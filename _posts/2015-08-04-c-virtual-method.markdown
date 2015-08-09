@@ -7,7 +7,7 @@ image:
   feature: sample-image-7.jpg
 ---
 
-Virtual methods allow the subclass methods to be called even if the pointer is of type base class.
+Virtual methods allow the subclass methods to be called even if the pointer is of type base class. For example, (source from [here](http://stackoverflow.com/questions/2391679/why-do-we-need-virtual-methods-in-c))
 
 {% highlight c++ %}
 class Base

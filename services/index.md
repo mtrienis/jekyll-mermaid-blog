@@ -12,9 +12,11 @@ We offer services focused on the Apache Spark engine. There are several options 
 
 | Cluster Manager     | Data Store | Build Tool  | Automation | Virtual Environment |
 |---------------------|-----------|-------------|------------| ----------------------|
-| Spark Standalone    | Cassandra | Sbt         | Ansible    | Virtualbox |
-| Apache Mesos        | HDFS   | Ant         | Salt       | Docker |
-| Hadoop Yarn         | AWS S3 | Maven       | Puppet     | EC2 |
+| [Spark Standalone](http://spark.apache.org/docs/latest/cluster-overview.html)    | [Cassandra](http://cassandra.apache.org/) | [Sbt](http://www.scala-sbt.org/) | [Ansible](http://www.ansible.com/) | [Virtualbox](https://www.virtualbox.org/) |
+| [Apache Mesos](http://mesos.apache.org/)        | [HDFS](http://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)   | [Ant](http://ant.apache.org/)         | [Salt](http://saltstack.com/) | [Docker](https://www.docker.com/) |
+| [Hadoop Yarn](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html)         | [AWS S3](https://aws.amazon.com/s3/) | [Maven](https://maven.apache.org/) | [Puppet](https://puppetlabs.com/) | [EC2](https://aws.amazon.com/ec2/) |
+
+### Deployment workflow
 
 All of these tools enable you to quickly develop, configure and deploy applications to a Spark cluster. That way you can spend more time gleaning insights and less time debugging.   
 
@@ -34,23 +36,25 @@ graph LR
 
 ### Cluster managers
 
-The deployment of Spark must run on either __Standalone__, __Apache Mesos__ or __Hadoop Yarn__. These will define the rules that dictate how your cluster resources will be utilized.
+The deployment of Spark must run on either [Standalone](http://spark.apache.org/docs/latest/cluster-overview.html), [Apache Mesos](http://mesos.apache.org/) or [Hadoop Yarn](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html). These will define the rules that dictate how your cluster resources will be utilized.
 
 ### Data stores
 
-As part of the deployment you should choose a data store that best fits your storage requirements. __Cassandra__ is a great data store for time series data as well as real-time dashboards. __HDFS__ is excellent option for flexible storage and reporting. __AWS S3__ is another option that will integrate into your cloud infrastructure.
+As part of the deployment you should choose a data store that best fits your storage requirements. [Cassandra](http://cassandra.apache.org/) is a great data store for time series data as well as real-time dashboards. [HDFS](http://hadoop.apache.org/docs/r1.2.1/hdfs_design.html) is excellent option for flexible storage and reporting. [AWS S3](https://aws.amazon.com/s3/) is another option that will integrate into your cloud infrastructure.
 
 ### Build tools
 
-Building your application should be simple and provide enough flexibility to integrate into your delivery process. We will build out your initial Spark application using either __sbt__, __ant__, or __Maven__.
-
-### Automation
-
-It is important that each step in the process of building out the infrastructure is automated in order to create repeatable and consistent environments. We provide automation services using __Ansible__, __Salt__ as well as __Puppet__.  
+Building your application should be simple and provide enough flexibility to integrate into your delivery process. We will build out your initial Spark application using either [Sbt](http://www.scala-sbt.org/), [Ant](http://ant.apache.org/) , or [Maven](https://maven.apache.org/).
 
 ### Virtual environment
 
-Scale out your nodes based on demand by deploying Apache Spark in the cloud. We support __EC2__ deployments, or __Docker__ containers for shipping. We also provide virtual machine support using __Virtualbox__ for development purposes. 
+Scale out your nodes based on demand by deploying Apache Spark in the cloud. We support [EC2](https://aws.amazon.com/ec2/) deployments, or [Docker](https://www.docker.com/) containers for shipping. We also provide virtual machine support using [Virtualbox](https://www.virtualbox.org/) for development purposes. 
+
+### Automation
+
+It is important that each step in the process of building out the infrastructure is automated in order to create repeatable and consistent environments. We provide automation services using [Ansible](http://www.ansible.com/), [Salt](http://saltstack.com/) as well as [Puppet](https://puppetlabs.com/).  
+
+
 
 
 

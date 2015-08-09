@@ -9,7 +9,7 @@ image:
 
 A decorate pattern is simply a wrapper that is used to extend the behavior of a function without actually modifying the function.
 
-For example, the function prints out a string given a name as an argument.
+For example (sourced from [here](http://thecodeship.com/patterns/guide-to-python-function-decorators/)), the function prints out a string given a name as an argument.
 
 {% highlight python %}
 def get_text(name):
