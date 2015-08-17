@@ -8,17 +8,12 @@ image:
   feature: sample-image-7.jpg
 ---
 {% stylesheet mermaid %}
-We offer services focused on the Apache Spark engine. There are several options regarding the cluster manager, data store, build tools, automation and instance types. 
 
-| Cluster Manager     | Data Store | Build Tool  | Automation | Virtual Environment |
-|---------------------|-----------|-------------|------------| ----------------------|
-| [Spark Standalone](http://spark.apache.org/docs/latest/cluster-overview.html)    | [Cassandra](http://cassandra.apache.org/) | [Sbt](http://www.scala-sbt.org/) | [Ansible](http://www.ansible.com/) | [Virtualbox](https://www.virtualbox.org/) |
-| [Apache Mesos](http://mesos.apache.org/)        | [HDFS](http://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)   | [Ant](http://ant.apache.org/)         | [Salt](http://saltstack.com/) | [Docker](https://www.docker.com/) |
-| [Hadoop Yarn](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html)         | [AWS S3](https://aws.amazon.com/s3/) | [Maven](https://maven.apache.org/) | [Puppet](https://puppetlabs.com/) | [EC2](https://aws.amazon.com/ec2/) |
+We offer services focused on the Apache Spark engine. There are several options regarding the cluster manager, data store, build tools, automation and deployments.
 
-### Deployment workflow
+### Spark workflow
 
-All of these tools enable you to quickly develop, configure and deploy applications to a Spark cluster. That way you can spend more time gleaning insights and less time debugging.   
+All of these tools enable you to quickly develop, configure and deploy applications to a Spark cluster. That way you can spend more time gleaning insights and less time debugging.
 
 {% mermaid %}
 graph LR
@@ -32,11 +27,11 @@ graph LR
     G -.-> F(Spark Worker)
     F -.-> J(Data Store)
   end
-{% endmermaid %}    
+{% endmermaid %}
 
 ### Cluster managers
 
-The deployment of Spark must run on either [Standalone](http://spark.apache.org/docs/latest/cluster-overview.html), [Apache Mesos](http://mesos.apache.org/) or [Hadoop Yarn](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html). These will define the rules that dictate how your cluster resources will be utilized.
+The deployment of Spark must run on either [Standalone](http://spark.apache.org/docs/latest/cluster-overview.html), [Apache Mesos](http://mesos.apache.org/) or [Hadoop Yarn](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html). These will define the rules that dictate how your cluster resources will be utilized and monitored.
 
 ### Data stores
 
@@ -48,12 +43,20 @@ Building your application should be simple and provide enough flexibility to int
 
 ### Virtual environment
 
-Scale out your nodes based on demand by deploying Apache Spark in the cloud. We support [EC2](https://aws.amazon.com/ec2/) deployments, or [Docker](https://www.docker.com/) containers for shipping. We also provide virtual machine support using [Virtualbox](https://www.virtualbox.org/) for development purposes. 
+Scale out your nodes based on demand by deploying Apache Spark in the cloud. We support [EC2](https://aws.amazon.com/ec2/) deployments, or [Docker](https://www.docker.com/) containers for shipping. We also provide virtual machine support using [Virtualbox](https://www.virtualbox.org/) for development purposes.
 
 ### Automation
 
-It is important that each step in the process of building out the infrastructure is automated in order to create repeatable and consistent environments. We provide automation services using [Ansible](http://www.ansible.com/), [Salt](http://saltstack.com/) as well as [Puppet](https://puppetlabs.com/).  
+It is important that each step in the process of building out the infrastructure is automated in order to create repeatable and consistent environments. We provide automation services using [Ansible](http://www.ansible.com/), [Salt](http://saltstack.com/) as well as [Puppet](https://puppetlabs.com/).
 
+### Feature summary
+
+
+| Cluster Manager     | Data Store | Build Tool  | Automation | Virtual Environment |
+|---------------------|-----------|-------------|------------| ----------------------|
+| [Spark Standalone](http://spark.apache.org/docs/latest/cluster-overview.html)    | [Cassandra](http://cassandra.apache.org/) | [Sbt](http://www.scala-sbt.org/) | [Ansible](http://www.ansible.com/) | [Virtualbox](https://www.virtualbox.org/) |
+| [Apache Mesos](http://mesos.apache.org/)        | [HDFS](http://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)   | [Ant](http://ant.apache.org/)         | [Salt](http://saltstack.com/) | [Docker](https://www.docker.com/) |
+| [Hadoop Yarn](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html)         | [AWS S3](https://aws.amazon.com/s3/) | [Maven](https://maven.apache.org/) | [Puppet](https://puppetlabs.com/) | [EC2](https://aws.amazon.com/ec2/) |
 
 
 

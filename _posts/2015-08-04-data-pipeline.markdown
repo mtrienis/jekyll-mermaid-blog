@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Data pipeline and streaming processing"
+title:  "Data pipeline and stream processing"
 date:   2015-08-05 12:00:00
 categories: Apache Spark
 image:
   feature: sample-image-7.jpg
 ---
-A data pipeline is method for shipping data efficiently to various services throughout your system. It provides a framework for enabling stream processing. That means it's now possible to build real-time dashboards and recommender systems at scale, without massive complexity.   
+A data pipeline is method for shipping data efficiently to various services throughout your system. It provides a framework for enabling stream processing. That means it's now possible to build things like real-time dashboards and recommender systems, at scale, without massive complexity.   
 
 ## The producer consumer model
 

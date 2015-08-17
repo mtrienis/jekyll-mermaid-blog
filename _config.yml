@@ -42,8 +42,8 @@ owner:
     ad-slot: 
   bing-verify: 
   github: trienism
-  stackoverflow: http://stackoverflow.com/users/3747110/trienism
-  linkedin: https://ca.linkedin.com/in/miketrienis
+  stackoverflow: 3747110/trienism
+  linkedin: miketrienis
 
 
 include: [".htaccess"]
