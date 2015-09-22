@@ -9,7 +9,7 @@ image:
 
  
 The `extendList` function defaults `myList` to an empty list. However, `myList` is only created when the function is first _defined_. Therefore subsequent calls to `extendList` will mutate and return the original list.
- 
+
 {% highlight python %}
 def extendList(val, myList=[]):
     myList.append(val)
@@ -18,7 +18,6 @@ def extendList(val, myList=[]):
 list1 = extendList(10)
 list2 = extendList(123,[])
 list3 = extendList('a')
-
 
 print "list1 = %s" % list1 # list1 = [10, 'a']
 print "list2 = %s" % list2 # list2 = [123]
