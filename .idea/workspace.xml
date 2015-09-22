@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cdbf223-c250-4fbe-8c25-76c1970b2a50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-06-01-apache-spark-build-sbt.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-08-11-python-concepts.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-16-python-concepts.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-05-31-apache-spark-kinesis.markdown" afterPath="$PROJECT_DIR$/_posts/2015-05-31-apache-spark-kinesis.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-06-05-apache-spark-redshift.markdown" afterPath="$PROJECT_DIR$/_posts/2015-06-05-apache-spark-redshift.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-06-05-apache-spark-supervisord.markdown" afterPath="$PROJECT_DIR$/_posts/2015-06-05-apache-spark-supervisord.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-03-python-decorate.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-03-python-decorate.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-04-c-virtual-method.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-04-c-virtual-method.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-04-data-pipeline.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-04-data-pipeline.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-08-16-python-pitfalls.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-16-python-default-values-and-bad-side-effects.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-04-java-singleton.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-04-java-singleton.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/example1_4.py" afterPath="$PROJECT_DIR$/code/example1_4.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jekyll-consulting-blog.iml" afterPath="$PROJECT_DIR$/.idea/jekyll-consulting-blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/miketrienis.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/miketrienis.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-16-python-concepts.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-16-python-concepts.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jekyll-consulting-blog.iws" />
@@ -50,14 +41,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2015-08-16-python-concepts.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015-08-16-python-concepts.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-concepts.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+            <state vertical-scroll-proportion="-0.96428573">
+              <caret line="79" column="160" selection-start-line="79" selection-start-column="160" selection-end-line="79" selection-end-column="160" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-08-16-python-default-values-and-bad-side-effects.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-default-values-and-bad-side-effects.markdown">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.4457831">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-08-16-python-closures-and-late-binding.markdown" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26153848">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-08-19-interview-questions.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-39.310345">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-08-04-java-singleton.markdown" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-08-04-java-singleton.markdown">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.6551723">
+              <caret line="9" column="187" selection-start-line="9" selection-start-column="187" selection-end-line="9" selection-end-column="187" />
               <folding />
             </state>
           </provider>
@@ -95,10 +138,8 @@
         <option value="$PROJECT_DIR$/code/example1_1.py" />
         <option value="$PROJECT_DIR$/code/example1_2.py" />
         <option value="$PROJECT_DIR$/code/example1_3.py" />
-        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-pitfalls.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-08-11-python-interview-questions.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-08-11-python-concepts.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-concepts.markdown" />
         <option value="$PROJECT_DIR$/code/example1_4.py" />
         <option value="$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-06-01-apache-spark-sbt-integration.markdown" />
@@ -110,6 +151,11 @@
         <option value="$PROJECT_DIR$/_posts/2015-08-04-c-virtual-method.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-08-04-data-pipeline.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-08-04-java-singleton.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-concepts.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-pitfalls.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-closure-bad-side-effects.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-bad-side-effects.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-default-values-and-bad-side-effects.markdown" />
       </list>
     </option>
   </component>
@@ -734,12 +780,12 @@
       <workItem from="1439264210023" duration="840000" />
       <workItem from="1439658645365" duration="32275000" />
       <workItem from="1442523204916" duration="7379000" />
-      <workItem from="1442802038179" duration="7790000" />
+      <workItem from="1442802038179" duration="11139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85283000" />
+    <option name="totallyTimeSpent" value="88632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1279" height="712" extended-state="0" />
@@ -815,16 +861,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1109,30 +1145,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/example1_4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5782313">
           <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-pitfalls.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2282051">
-          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1188,17 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-08-04-java-singleton.markdown">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.501845">
-          <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-08-04-data-pipeline.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -1221,13 +1226,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-04-java-singleton.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6551723">
+          <caret line="9" column="187" selection-start-line="9" selection-start-column="187" selection-end-line="9" selection-end-column="187" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-concepts.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        <state vertical-scroll-proportion="-0.96428573">
+          <caret line="79" column="160" selection-start-line="79" selection-start-column="160" selection-end-line="79" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-39.310345">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-default-values-and-bad-side-effects.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4457831">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26153848">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

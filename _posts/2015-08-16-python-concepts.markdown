@@ -68,7 +68,7 @@ sum_of_first_n = sum(firstn(1000000))
 
 ## Anonymous (lambda) functions 
 
-The next snippet of code defines a [lambda function](http://www.secnetix.de/olli/Python/lambda_functions.hawk) which is essentially a function that is not bounded to a name (i.e. an anonymous function). 
+The next snippet of code defines a [lambda function](http://www.secnetix.de/olli/Python/lambda_functions.hawk) which is essentially a function that is not bounded to a name. 
 {% highlight python %}
 >>> print lambda x : i * x
 <function <lambda> at 0x109ae6938>
@@ -77,25 +77,12 @@ The next snippet of code defines a [lambda function](http://www.secnetix.de/olli
 
 ## List comprehensions
 
-Putting it all together, we end up with a [list comprehension](http://www.secnetix.de/olli/Python/list_comprehensions.hawk) that generates a list of lambda functions. This is what is returned from the original `multipliers` function. 
+A [list comprehension](http://www.secnetix.de/olli/Python/list_comprehensions.hawk) a way to generate lists using a natural syntax. If we build on the previous example, we can generate a list of lambda functions by: 
 
 {% highlight python %}
 >>> print [lambda x : i * x for i in range(4)]
 [<function <lambda> at 0x109ae6938>, <function <lambda> at 0x109ae6758>, <function <lambda> at 0x109ae69b0>, <function <lambda> at 0x109ae6a28>]
 {% endhighlight %}
-
-As a solution to this problem we can define a generator 
-
-> A generator is a function that produces a sequence of results instead of a single value.
-
-{% highlight python %}
->>> def multipliers():
-...      for i in range(4): yield lambda x : i * x 
-
-{% endhighlight %}
-
-
-
 
 ## Dynamic arguments
 

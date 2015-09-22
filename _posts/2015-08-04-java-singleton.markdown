@@ -7,7 +7,7 @@ image:
   feature: sample-image-7.jpg
 ---
 
-The singleton pattern ensures that only one instance of an object can be instantiated. The code snippet below is an example of a singleton pattern.
+The singleton pattern ensures that only one instance of an object can be instantiated. The code snippet (from [tutorialspoint](http://www.tutorialspoint.com/java/java_using_singleton.htm)) below is an example of a singleton pattern.
 
 {% highlight java %}
 public class Singleton {
