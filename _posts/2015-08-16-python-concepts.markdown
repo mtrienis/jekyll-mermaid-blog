@@ -1,20 +1,69 @@
 ---
 layout: post
 title:  "Python concepts for interviews"
-date:   2015-06-05 12:00:00
+date:   2015-08-16 12:00:00
 categories: Python
 image:
   feature: sample-image-7.jpg
 ---
 
-Important Python concepts for interviews.
+Preparing for a technical interview with Python means that you should have a decent understanding of the following concepts.
 
-## Generators
+## Iterating over iterators 
 
-We can break down the snippet of code further by inspecting the output of various components of the snippet. The `range` operator is a [generator](https://wiki.python.org/moin/Generators) function, and is used to generate lists. In this example, it generates a list of integers from 0 to 3.
+ __Lists__, __dictionaries__, __generators__ and __strings__ are all example of iterators. Each one of these constructs support `for` statements.
+  
 {% highlight python %}
->>> print range(4) # [0, 1, 2, 3]
-[0, 1, 2, 3]
+
+# looping through a list
+>>> for i in [1,2,3]:
+...   print i
+... 
+1
+2
+3
+
+# looping through a dictionary
+>>> for i in {"key":"value"}:
+...   print i
+... 
+key
+
+
+# looping through a string
+>>> for i in "hi":
+...     print i
+... 
+h
+i
+{% endhighlight %}
+
+## Generator functions
+
+Generators are used to produce iterators with minimum memory consumption. 
+
+{% highlight python %}
+# Using the generator pattern (an iterable)
+class firstn(object):
+    def __init__(self, n):
+        self.n = n
+        self.num, self.nums = 0, []
+
+    def __iter__(self):
+        return self
+
+    # Python 3 compatibility
+    def __next__(self):
+        return self.next()
+
+    def next(self):
+        if self.num < self.n:
+            cur, self.num = self.num, self.num+1
+            return cur
+        else:
+            raise StopIteration()
+
+sum_of_first_n = sum(firstn(1000000))
 {% endhighlight %}
 
 ## Anonymous (lambda) functions 
@@ -45,45 +94,7 @@ As a solution to this problem we can define a generator
 
 {% endhighlight %}
 
-## Iterating over iterators 
 
- __lists__, __dictionaries__, __generators__ and __strings__ are all example of iterators. Each one of these constructs support the `for` statement for looping over.
-  
-{% highlight python %}
-
-# looping through a list
->>> for i in [1,2,3]:
-...   print i
-... 
-1
-2
-3
-
-# looping through a dictionary
->>> for i in {"key":"value"}:
-...   print i
-... 
-key
-
-# loop through a generator 
->>> for i in range(3):
-...   print i
-... 
-0
-1
-2
-{% endhighlight %}
-
-# looping through a string
->>> for i in "hello":
-...     print i
-... 
-h
-e
-l
-l
-o
-{% endhighlight %}
 
 
 ## Dynamic arguments

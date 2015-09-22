@@ -7,11 +7,22 @@ image:
   feature: sample-image-7.jpg
 ---
 
-The following are a list of common pitfalls when trying to integrate kinesis with spark streaming.
+What you need to know when setting up [Spark Streaming](http://spark.apache.org/streaming/) with [AWS Kinesis](https://aws.amazon.com/kinesis/). 
 
-### Each receiver occupies an entire core
+## Each receiver occupies an entire core
 
-I realize this sounds like an obvious statement. However it can be subtle problem if you end up creating too many receivers for a spark streaming application. For example, the code snippet, 
+A receiver is associated with a _dstream_ which receives data from streaming sources. It typically sits on the worker and pulls in data from one or more Kinesis shards. 
+
+> Input DStreams are DStreams representing the stream of input data received from streaming sources. In the quick example, lines was an input DStream as it represented the stream of data received from the netcat server. Every input DStream (except file stream, discussed later in this section) is associated with a Receiver (Scala doc, Java doc) object which receives the data from a source and stores it in Spark’s memory for processing.
+
+Receivers are generated when you create a stream to Kinesis:
+
+{% highlight scala %}
+KinesisUtils.createStream(ssc, appName, streamName, endpointUrl, regionName,
+        InitialPositionInStream.LATEST, kinesisCheckpointInterval, StorageLevel.MEMORY_AND_DISK_2)
+{% endhighlight %}
+
+For each shard in your Kinesis stream, you should typically create one receiver. Additional streams (or receivers) will allow you to scale out the amount of incoming data that will be processed. 
 
 {% highlight scala %}
 val numStreams = numShards
@@ -23,45 +34,22 @@ val kinesisStreams = (0 until numStreams).map { i =>
 }
 {% endhighlight %}
 
-creates as many streams as you have shards. Each stream creates a receiver, and will occupy an entire core for the duration of your streaming application. This means that if you scale out the number of shards, you will also need to scale out the number of cores available for your executors. Otheriwse, you may find yourself running out of cores. 
+However, it's important to note that each receiver created will use an entire core in your cluster. If you are using the snippet above, then you will automatically create additional receivers by simply adding shards to your Kinesis stream. If you create too many receivers then you will not have any cores available for processing. 
 
-### Never cross your Kinesis stream names mid flow 
+## Never cross your Kinesis stream names mid flow 
 
-During development you may need to change the stream name as you debug your application. Soon after you may noticed that you are unable to process any additional records from Kinesis. The solution here is to purge the Kinesis related DynamoDB table located in the us-east-1 region. In some cases you may also need to delete and recreate Kinesis streams. 
+During development you may need to change the stream name as you debug your application. If you noticed that you are unable to process any additional records from Kinesis then you need purge the Kinesis related DynamoDB table located in the _us-east-1_ region. In some cases you may also need to delete and recreate Kinesis streams. 
 
-### Total job duration should never exceed batch interval time 
+## Job duration should never exceed batch time
 
-There are a couple ways to monitor throughput:
+The time it takes to run your jobs should always be less than the batch interval. If you find your spark jobs taking longer than the batch interval then your streaming application will take longer and longer to finish processing. That's why it's important to setup monitoring to measure _throughput_.
 
-* Cloud watch provides dashboards for monitoring the put and get requests. It's important to understand these metrics as it will allow you to determine whether you need to increase the number of shards in Kinesis or workers in apache spark. If the get rate (bytes / records) is less than the maximum available then the bottleneck is the consumer application (i.e. spark streaming). 
-* Spark web UI provides a scheduler delay metric that is determined by the time required to assign a task to an available resource. If your scheduling delay is increasing, it's a good indication that your system can not handle the amount of incoming data. 
+### AWS cloud watch
+
+Cloud watch provides dashboards for monitoring the put and get requests for AWS Kinesis. It's important to understand these metrics as it will allow you to determine whether you need to increase the number of shards in Kinesis or workers in apache spark. If the _get rate_ (bytes / records) is less than the maximum available then the bottleneck is your spark streaming application. 
+
+### Spark Web UI
+
+Spark web UI provides a scheduler delay metric that is determined by the time required to assign a task to an available resource. If your scheduling delay is increasing, it's a good indication that your system can not handle the amount of incoming data. 
 	
-### How to avoid dependency hell when using assembly-sbt
 
-Assembling your fat jar through `sbt-assembly` will result in a huge number of library conflicts. In order to circumvent this issue, you can simply include all spark libraries as `provided`. 
-
-{% highlight scala %}
-libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-core" % "1.3.0" % "provided",
-  "org.apache.spark" %% "spark-streaming" % "1.3.0" % "provided",
-  "org.apache.spark" %% "spark-streaming-kinesis-asl_2.10" % "provided"
-)
-{% endhighlight %}
-
-Provided is defined as:
-
-> This is much like `compile`, but indicates you expect the JDK or a container to provide the dependency at runtime. For example, when building a web application for the Java Enterprise Edition, you would set the dependency on the Servlet API and related Java EE APIs to scope `provided` because the web container provides those classes. This scope is only available on the compilation and test classpath, and is not transitive.
-
-Submitting a spark application through `spark-submit` will automatically include those libraries at run-time. Additional libraries can be provided at run time by specifying `--jars` arguments.
-
-{% highlight bash %}
-./bin/spark-submit \
-  --verbose 
-  --jars <external-jars>
-  --class <main-class>
-  --master <master-url> \
-  --deploy-mode <deploy-mode> \
-  ... # other options
-  <application-jar> \
-  [application-arguments]
-{% endhighlight %}

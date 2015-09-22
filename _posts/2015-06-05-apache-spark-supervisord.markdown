@@ -17,17 +17,20 @@ Apache Spark comes bundled with several [launch scripts](https://spark.apache.or
 
 The issue with launching the cluster this way is that each time the cluster reboots you will need to re-execute the shell scripts above. This process is cumbersome and prone to error.
 
-# Controlling master and worker process with Supervisord
+## Supervising master and worker processes
 
 A better approach requires the use of [supervisord](http://supervisord.org/introduction.html) (a process control system) to manage spark processes. It has the following benefits:
 
-* A homogeneous method for _starting_/_stopping_/_restarting_ processes
-* Provides a centralized monitoring mechanism for sensitive services   
+* No need to create shell scripts for managing processes
+* Centralized monitoring mechanism for sensitive services   
 * Accurate up/down statuses, even when a process crashes
 
-The only requirements is that processes must be run in the _foreground_. Therefore master and worker(s) processes should be initiated through `spark-class` instead of the sbin shell scripts as they run the processes as a daemon. You should end up with supervisord configurations resembling:
+The only requirements is that processes must be run in the _foreground_. Therefore the master and worker(s) processes should be initiated through `spark-class` instead of the sbin shell scripts as they run the processes as a daemon. 
 
-* /supervisor/conf.d/spark_master.conf
+### Supervisor configuration files
+
+The master process will need to start prior to any workers. 
+
 {% highlight bash %}
 [program:spark_master]
 command=/bin/spark-class org.apache.spark.deploy.master.Master --ip master.mydomain.com --port 7077 --webui-port 18080
@@ -37,7 +40,8 @@ priority=1
 autostart=true
 {% endhighlight %}
 
-* /supervisor/conf.d/spark_worker.conf
+Supervisor is configured to start retries 3 times. That is usually enough time for the master process to start before the workers can begin connecting to it.
+
 {% highlight bash %}
 [program:spark_worker]
 command=/bin/spark-class org.apache.spark.deploy.worker.Worker spark://master.mydomain.com:7077
