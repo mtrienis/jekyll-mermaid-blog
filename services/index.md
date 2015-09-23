@@ -49,15 +49,6 @@ Scale out your nodes based on demand by deploying Apache Spark in the cloud. We 
 
 It is important that each step in the process of building out the infrastructure is automated in order to create repeatable and consistent environments. We provide automation services using [Ansible](http://www.ansible.com/), [Salt](http://saltstack.com/) as well as [Puppet](https://puppetlabs.com/).
 
-### Feature summary
-
-
-| Cluster Manager     | Data Store | Build Tool  | Automation | Virtual Environment |
-|---------------------|-----------|-------------|------------| ----------------------|
-| [Spark Standalone](http://spark.apache.org/docs/latest/cluster-overview.html)    | [Cassandra](http://cassandra.apache.org/) | [Sbt](http://www.scala-sbt.org/) | [Ansible](http://www.ansible.com/) | [Virtualbox](https://www.virtualbox.org/) |
-| [Apache Mesos](http://mesos.apache.org/)        | [HDFS](http://hadoop.apache.org/docs/r1.2.1/hdfs_design.html)   | [Ant](http://ant.apache.org/)         | [Salt](http://saltstack.com/) | [Docker](https://www.docker.com/) |
-| [Hadoop Yarn](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html)         | [AWS S3](https://aws.amazon.com/s3/) | [Maven](https://maven.apache.org/) | [Puppet](https://puppetlabs.com/) | [EC2](https://aws.amazon.com/ec2/) |
-
 
 
 
