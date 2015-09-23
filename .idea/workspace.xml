@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cdbf223-c250-4fbe-8c25-76c1970b2a50" name="Default" comment="" />
+    <list default="true" id="8cdbf223-c250-4fbe-8c25-76c1970b2a50" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-06-01-apache-spark-build-sbt.markdown" afterPath="$PROJECT_DIR$/_posts/2015-06-01-apache-spark-build-sbt.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown" afterPath="$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="jekyll-consulting-blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -22,27 +27,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/services/index.md">
+      <file leaf-file-name="2015-08-16-python-closures-and-late-binding.markdown" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.137931">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2015-08-19-interview-questions.markdown" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.323232">
-              <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.44067797">
+              <caret line="25" column="184" selection-start-line="25" selection-start-column="184" selection-end-line="25" selection-end-column="184" />
               <folding />
             </state>
           </provider>
@@ -84,7 +76,6 @@
         <option value="$PROJECT_DIR$/code/example1_4.py" />
         <option value="$PROJECT_DIR$/_posts/2015-06-01-apache-spark-sbt-integration.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-05-31-apache-spark-kinesis.markdown" />
-        <option value="$PROJECT_DIR$/_posts/2015-06-01-apache-spark-build-sbt.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-06-05-apache-spark-redshift.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-06-05-apache-spark-supervisord.markdown" />
         <option value="$PROJECT_DIR$/_posts/2015-08-03-python-decorate.markdown" />
@@ -99,6 +90,8 @@
         <option value="$PROJECT_DIR$/CNAME" />
         <option value="$PROJECT_DIR$/services/index.md" />
         <option value="$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-06-01-apache-spark-build-sbt.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown" />
       </list>
     </option>
   </component>
@@ -212,7 +205,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="bad&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-mermaid-blog-consulting/_posts/2015-08-16-python-default-values-and-bad-side-effects.markdown&#10;nav&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-consulting-blog/_data/navigation.yml&#10;navi&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-consulting-blog/_data/navigation.yml&#10;navigation&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-consulting-blog/_data/navigation.yml" />
+    <property name="SearchEverywhereHistoryKey" value="python-cl&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-mermaid-blog-consulting/_posts/2015-08-16-python-closures-and-late-binding.markdown&#10;apache-spark-b&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-mermaid-blog-consulting/_posts/2015-06-01-apache-spark-build-sbt.markdown&#10;bad&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-mermaid-blog-consulting/_posts/2015-08-16-python-default-values-and-bad-side-effects.markdown&#10;nav&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-consulting-blog/_data/navigation.yml&#10;navi&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-consulting-blog/_data/navigation.yml&#10;navigation&#9;FILE&#9;file:///Users/miketrienis/Desktop/tri-vagrant/vendor/jekyll-consulting-blog/_data/navigation.yml" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -742,16 +735,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93416000" />
+    <option name="totallyTimeSpent" value="97918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1279" height="709" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38449112" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38573745" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1072,9 +1065,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-06-01-apache-spark-build-sbt.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41666666">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.060606">
+          <caret line="21" column="199" selection-start-line="21" selection-start-column="199" selection-end-line="21" selection-end-column="199" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/index.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931">
+        <state vertical-scroll-proportion="0.3726708">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
@@ -1083,13 +1098,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-08-19-interview-questions.markdown">
+    <entry file="file://$PROJECT_DIR$/_posts/2015-08-16-python-closures-and-late-binding.markdown">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.323232">
-          <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.44067797">
+          <caret line="25" column="184" selection-start-line="25" selection-start-column="184" selection-end-line="25" selection-end-column="184" />
           <folding />
         </state>
       </provider>

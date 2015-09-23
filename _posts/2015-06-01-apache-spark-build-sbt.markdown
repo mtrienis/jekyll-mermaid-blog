@@ -7,7 +7,7 @@ image:
   feature: sample-image-7.jpg
 ---
 
-## How to avoid dependency hell when using assembly-sbt
+## How to avoid dependency hell
 
 Assembling your fat jar through [sbt-assembly](https://github.com/sbt/sbt-assembly) will result in a huge number of library conflicts. In order to circumvent this issue, you can simply include all spark libraries as `provided`. 
 

@@ -19,7 +19,7 @@ They are scaled out by sharding the database. It serves to balance the write loa
 
 ## What is the difference between a thread and a process?
 
-Threads are used for small tasks, whereas processes are used for more 'heavyweight' tasks – basically the execution of applications. Another difference between a thread and a process is that threadswithin the same process share the same address space, whereas different processes do not.
+Threads are used for small tasks, whereas processes are used for more 'heavyweight' tasks – basically the execution of applications. Another difference between a thread and a process is that threads within the same process share the same address space, whereas different processes do not.
 
 ## What is the difference between async and sync requests?
 
