@@ -47,5 +47,5 @@ The complexities of distributed fault-tolerant processing are abstracted out by 
 
 ## Time to make your data ubiquitous 
 
-If you're interested in working with me to develop your next generation analytics platform, please email me at [mike.trienis@orcsol.com](mailto:mike.trienis@orcsol.com)
+If you're interested in working with me to develop your next generation analytics platform, please email me at [mike.trienis@quickinsights.io](mailto:mike.trienis@quickinsights.io)
 
