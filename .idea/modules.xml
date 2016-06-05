@@ -3,6 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jekyll-mermaid-blog.iml" filepath="$PROJECT_DIR$/jekyll-mermaid-blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/java/util/src/main/main.iml" filepath="$PROJECT_DIR$/../protobuf/java/util/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/javanano/src/main/main1.iml" filepath="$PROJECT_DIR$/../protobuf/javanano/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/java/core/src/main/main2.iml" filepath="$PROJECT_DIR$/../protobuf/java/core/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/ruby/src/main/main3.iml" filepath="$PROJECT_DIR$/../protobuf/ruby/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../intellij/productivity.iml" filepath="$PROJECT_DIR$/../intellij/productivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/protobuf.iml" filepath="$PROJECT_DIR$/../protobuf/protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/java/util/src/test/test.iml" filepath="$PROJECT_DIR$/../protobuf/java/util/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/java/core/src/test/test1.iml" filepath="$PROJECT_DIR$/../protobuf/java/core/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../protobuf/javanano/src/test/test2.iml" filepath="$PROJECT_DIR$/../protobuf/javanano/src/test/test2.iml" />
     </modules>
   </component>
 </project>

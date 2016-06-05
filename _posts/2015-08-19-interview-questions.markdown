@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "General phone screen interview questions"
+title:  "Programming phone screen questions"
 date:   2015-08-16 12:00:00
 categories: Python
 image:
@@ -65,7 +65,7 @@ Most MySQL indexes (PRIMARY KEY, UNIQUE, INDEX, and FULLTEXT) are stored in B-tr
 
 ## What is the MVC pattern?
 
-Model–View–Controller (MVC) is a type of computer user interface that separates the representation of information from the user's interaction with it.[1][2] The model consists of application data and business rules, and the controller mediates input, converting it to commands for the model or view.[3] A view can be any output representation of data, such as a chart or a diagram.
+Model–View–Controller (MVC) is a type of computer user interface that separates the representation of information from the user's interaction with it. The model consists of application data and business rules, and the controller mediates input, converting it to commands for the model or view.[3] A view can be any output representation of data, such as a chart or a diagram.
 
 ## What is function overloading?
 

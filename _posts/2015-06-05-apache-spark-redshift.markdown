@@ -18,7 +18,6 @@ Therefore for each batch of data in your Spark Streaming application,
 
 {% mermaid %}
         graph LR
-        
         A[AWS Kinesis] --> B[Spark Streaming Application]
         B --> C[AWS S3]
         B --> D[AWS Redshift]
