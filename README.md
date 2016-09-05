@@ -53,3 +53,4 @@ Please see the [mermaid documentation](https://github.com/knsv/mermaid/wiki) for
 ## Demo
 
 For a working example, check out the [blog post](http://quickinsights.io/apache/spark/apache-spark-redshift) as well the [source code](https://github.com/trienism/jekyll-mermaid-blog).
+
